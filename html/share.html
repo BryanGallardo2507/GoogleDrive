@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Google Drive Clone Funcional</title>
-    <link rel="stylesheet" href="./Styles/styles.css">
+    <link rel="stylesheet" href="../Styles/styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
     
 </head>
@@ -97,6 +97,7 @@
                     </svg>
                     Mi unidad
                 </a>
+
                 <a href="share.html" class="menu-item">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="#3c4043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -106,6 +107,7 @@
                     </svg>
                     Compartido conmigo
                 </a>
+
                 <a href="recent.html" class="menu-item">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M12 8V12L15 15" stroke="#3c4043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -119,8 +121,7 @@
                     </svg>
                     Destacados
                 </a>
-
-                <a href="reclyclebin.html" class="menu-item">
+                <div class="menu-item">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 6H5H21" stroke="#3c4043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         <path d="M8 6V4C8 3.46957 8.21071 2.96086 8.58579 2.58579C8.96086 2.21071 9.46957 2 10 2H14C14.5304 2 15.0391 2.21071 15.4142 2.58579C15.7893 2.96086 16 3.46957 16 4V6M19 6V20C19 20.5304 18.7893 21.0391 18.4142 21.4142C18.0391 21.7893 17.5304 22 17 22H7C6.46957 22 5.96086 21.7893 5.58579 21.4142C5.21071 21.0391 5 20.5304 5 20V6H19Z" stroke="#3c4043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -128,20 +129,20 @@
                         <path d="M14 11V17" stroke="#3c4043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                     </svg>
                     Papelera
-                </a>
+                </div>
 
-                <div class="bottom">
+                <a href="reclyclebin.html" class="bottom">
                     <div class="progress" style="--v:1%"></div>
                     <span class="meta-text">312.9 MB of 15 GB used</span>
                     <a href="upgrade.html" target="_blank">
                         <button class="outlined-button">Get more storage</button>
                     </a>
-                </div>
+                </a>
 
             </aside>
             <main class="content">
                 <div class="content-header">
-                    <h1 class="content-title">Reciente</h1>
+                    <h1 class="content-title">Compartido conmigo</h1>
                     <div class="view-options">
                         <button id="gridView" aria-label="Vista de cuadrícula" class="active">
                             <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -191,6 +192,6 @@
             </main>
         </div>
     </div>
-    <script src="./JS/script.js"></script>
+    <script src="../JS/script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
