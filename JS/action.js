@@ -1,7 +1,7 @@
 const plans = [
     { size: '100GB', price: '1.99', color: '#1a73e8' },
     { size: '200GB', price: '2.99', color: '#34a853' },
-    { size: '2TB', price: '9.99', color: '#fbbc04' }
+    { size: '2TB', price: '9.99', color: '#fbbc04' },
 ];
 
 let selectedPlan = '100GB';
