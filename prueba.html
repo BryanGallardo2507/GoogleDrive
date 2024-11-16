@@ -50,13 +50,23 @@
         </header>
         <div class="main-content">
             <aside class="sidebar">
-                <button class="new-button" id="newButton">
-                    <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M18 7.5V28.5" stroke="#3c4043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                        <path d="M7.5 18H28.5" stroke="#3c4043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
-                    </svg>
-                    Nuevo
-                </button>
+
+                <div class="dropdown">
+                    <button id="newButton" class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M18 7.5V28.5" stroke="#3c4043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                            <path d="M7.5 18H28.5" stroke="#3c4043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Nuevo
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">New Folder</a></li>
+                        <li><a class="dropdown-item" href="#">File Upload</a></li>
+                        <li><a class="dropdown-item" href="#">Folder Upload</a></li>
+                      </ul>
+                    
+                </div>
+
                 <div class="menu-item">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M3 5C3 3.89543 3.89543 3 5 3H19C20.1046 3 21 3.89543 21 5V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5Z" stroke="#3c4043" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
