@@ -186,3 +186,19 @@ th {
 .outlined-button:focus {
 	background: #e3eefd;
 }
+.progress {
+	height: 4px !important;
+	background: #e0e0e0;
+	border-radius: 4px;
+	margin-bottom: 13px;
+	position: relative;
+	overflow: hidden;
+	margin-top: 7px;
+}
+.progress:after {
+	content: '';
+	position: absolute;
+	height: 100%;
+	width: var(--v, 0%);
+	background: #1a73e8;
+}
