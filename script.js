@@ -1,7 +1,6 @@
 const files = [
     { name: "Documento1.docx", type: "Documento", lastModified: "10 nov 2023", size: "15 KB" },
     { name: "Imagen.jpg", type: "Imagen", lastModified: "5 nov 2023", size: "2.5 MB" },
-    { name: "Proyecto", type: "Carpeta", lastModified: "1 nov 2023", size: "--" },
     { name: "Presentación.pptx", type: "Presentación", lastModified: "28 oct 2023", size: "5.2 MB" }
 ];
 
