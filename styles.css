@@ -64,11 +64,11 @@ header {
 #newButton {
     display: flex;
     align-items: center;
-    padding: 12px 14px;
+    padding: 10px 14px;
     background-color: #fff;
     border: none;
     border-radius: 15px;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 500;
     color: #3c4043;
     cursor: pointer;
@@ -187,7 +187,7 @@ th {
 	background: #e3eefd;
 }
 .progress {
-	height: 4px !important;
+	height: 6px !important;
 	background: #e0e0e0;
 	border-radius: 4px;
 	margin-bottom: 13px;
