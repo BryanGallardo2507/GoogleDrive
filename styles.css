@@ -61,10 +61,10 @@ header {
     padding: 16px;
     border-right: 1px solid #dadce0;
 }
-#new-button {
+#newButton {
     display: flex;
     align-items: center;
-    padding: 12px 24px;
+    padding: 5px 16px;
     background-color: #fff;
     border: 1px soli d #dadce0;
     border-radius: 24px;
@@ -157,4 +157,32 @@ th {
 }
 .hidden {
     display: none;
+}
+.meta-text {
+	font-size: 13px;
+	color: #5f6368;
+	display: block;
+	margin-bottom: 13px;
+}
+.outlined-button {
+	border: 1px solid #dadce0;
+	color: #15c;
+	background: white;
+	border-radius: 4px;
+	padding: 10px 23px;
+	font-size: 14px;
+	font-weight: 500;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+.outlined-button:hover {
+	border-color: #dadce0;
+	color: #185abc;
+	background: #f6f9fe;
+}
+.outlined-button:active {
+	background: #e3eefd;
+}
+.outlined-button:focus {
+	background: #e3eefd;
 }
