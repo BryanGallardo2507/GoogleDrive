@@ -67,6 +67,7 @@ function switchToListView() {
 gridViewButton.addEventListener('click', switchToGridView);
 listViewButton.addEventListener('click', switchToListView);
 
+/*
 newButton.addEventListener('click', () => {
     const newFileName = prompt("Ingrese el nombre del nuevo archivo:");
     if (newFileName) {
@@ -83,6 +84,7 @@ newButton.addEventListener('click', () => {
         }
     }
 });
+*/
 
 // Inicializar la vista
 renderListView();
