@@ -1,10 +1,28 @@
-const plans = [
+const plansMensual = [
     { size: '100GB', price: '1.99', color: '#1a73e8' },
     { size: '200GB', price: '2.99', color: '#34a853' },
     { size: '2TB', price: '9.99', color: '#fbbc04' },
 ];
+const plansAnual = [
+    { size: '100GB', price: '17.99', color: '#1a73e8' },
+    { size: '200GB', price: '26.99', color: '#34a853' },
+    { size: '2TB', price: '89.99', color: '#fbbc04' },
+];
+let selectedPlan = '100GB'; // Plan seleccionado inicial
+let isOriginal = true; // Estado actual: ¿estamos usando los planes originales?
+let plans = [...plansMensual]; // Iniciamos con los planes mensuales
 
-let selectedPlan = '100GB';
+const buttonMensual = document.getElementById('upgradeBtn1');
+const buttonAnual = document.getElementById('upgradeBtn2');
+
+buttonMensual.addEventListener('click', () => {
+    console.log('Evento 1: Cambiando planes...');
+    togglePlans(); // Llama a tu función existente
+});
+buttonAnual.addEventListener('click', () => {
+    console.log('Evento 2: Cambiando planes...');
+    togglePlans(); // Llama a tu función existente
+});
 
 function renderPlans() {
     const plansContainer = document.getElementById('plans');
@@ -18,6 +36,18 @@ function renderPlans() {
             <span class="check-icon">✓</span>
         </div>
     `).join('');
+}
+
+function togglePlans() {
+    if (isOriginal) {
+        plans = [...plansAnual]; // Cambiar a los nuevos planes
+        selectedPlan = plansAnual[0].size; // Seleccionar el primer nuevo plan
+    } else {
+        plans = [...plansMensual]; // Regresar a los planes originales
+        selectedPlan = plansMensual[0].size; // Seleccionar el primer plan original
+    }
+    isOriginal = !isOriginal; // Cambiar el estado
+    renderPlans();
 }
 
 function selectPlan(size) {
